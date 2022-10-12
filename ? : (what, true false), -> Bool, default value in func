@@ -1,0 +1,25 @@
+func check (n1: String, n2: String) -> Bool {
+    n1.sorted() == n2.sorted()
+}
+
+check(n1: "gate", n2: "ateg")
+
+
+func smokeOrNah (checkPocket: String) -> String{
+    let result = checkPocket == "Cigarets" ? "smoker" : "non smoker"
+    return result
+}
+
+smokeOrNah(checkPocket: "Cigarets")
+
+
+func travelCost (budget: Int = 5000) -> String {
+    if budget > 5000 {
+        print("that's way too much")
+    } else if budget <= 5000 {
+        print("i can afford it")
+    }
+    return "Let's travel !"
+}
+
+travelCost()
